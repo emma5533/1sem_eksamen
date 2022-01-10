@@ -9,6 +9,7 @@
   background-color: #0b1f8c;
   padding-inline: 1.5rem;
   padding-block: 0.3rem;
+  text-align: center;
 }
 
 .third .button a {
@@ -51,6 +52,6 @@
     margin: 0;
   }
   .third .button {
-    place-self: center;
+    place-self: center; /*placerer knap i midten af den ledige plads*/
   }
 }
