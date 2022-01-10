@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/mutual.css" />
+    <link rel="stylesheet" href="./styles/tema4.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ooa3lek.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <title>Portfolio</title>
+  </head>
+
+  <header class="banner">
+    <div class="logo">
+      <a href="index.html"
+        ><img src="./assets/emmaig.svg" alt="logo" width="160"
+      /></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="tema1.html">Tema 1</a></li>
+        <li><a href="tema2.html">Tema 2</a></li>
+        <li><a href="tema3.html">Tema 3</a></li>
+        <li><a href="tema4.html">Tema 4</a></li>
+        <li><a href="tema5.html">Tema 5</a></li>
+        <li><a href="ommig.html">Om mig</a></li>
+      </ul>
+    </nav>
+    <button class="toggle_btn">
+      <img
+        class="btn quit"
+        src="./assets/kryds_asset.svg"
+        alt="kryds"
+        width="44"
+      />
+      <img
+        class="btn burger"
+        src="./assets/burger_asset.svg"
+        alt="burger"
+        width="44"
+      />
+    </button>
+  </header>
+  <body>
+    <main>
+      <section class="first">
+        <div class="first_grid">
+          <img src="./assets/tema4_com.png" alt="tema4" />
+          <article>
+            <h1>Tema 4 - grundlæggende animation</h1>
+            <p>
+              Tema 4 havde til formål at introducere animation vha. CSS og
+              JavaScript. Dette er nyttigt at have kendskab til, da det kan få
+              almindelige sites, til at fremstå langt mere professionelle.
+              <br />
+              Processen startede med idégenerering, hvor vi f.eks. brugte cross
+              method, til at tvinge vores hjerne ned af andre stier end den er
+              vant til. Det fungerede godt, og jeg kom frem til noget om Den
+              Store Bagedyst. <br />
+              Jeg begyndte automatisk at skitsere lidt, da jeg tidligere har
+              lært i tema 3, at det er godt at få sine idéer ned på papir og
+              prøve tingene af på forskellige måder. <br />
+              Jeg viste min lofi paper-prototoype til en medstuderende, og
+              omvendt. Dette var en god test, ift. hvor tydeligt spilkonceptet
+              var, på daværende tidspunkt. Jeg fik nogle idéer, som jeg
+              arbejdede videre på.
+            </p>
+          </article>
+        </div>
+      </section>
+      <img class="line" src="./assets/hr_xl.svg" alt="linje" />
+
+      <section class="second">
+        <p class="text1">
+          Oplæggene om karakter- og spildesign var spændende, og fik mig til at
+          overveje hvad der ville fungere for mig. Hvordan kunne jeg
+          implementere koncepter som:
+          <i> atmosfærisk perspektiv, rule of thirds, asymmetri</i> og
+          <i> solid drawing</i> i mit eget. <br />
+          Jeg lærte også, at mit spil gerne må have en baggrund, og en forgrund
+          for at skabe dybde. Dog skulle jeg være forsigtig med, at dette ikke
+          tog for meget fokus fra selve spillet. <br />
+          Særligt ønskede jeg, at holde mig til pastel farver, da også Den Store
+          Bagedyst benytter disse i sit visuelle udtryk. <br />
+          Det var vigtigt ikke at gøre spillet for farligt, og derfor
+          midtercentrerede jeg min spilskærm, og undgik for mange skæve linjer.
+          <br />
+          <br />
+          Det var hele tiden en balance mellem, at holde den stil jeg havde
+          valgt – og blande den med virkeligheden, for at holde brugeren i den
+          fortælling jeg ønskede.
+        </p>
+        <img class="img1" src="./tema4/skitser.webp" alt="skitser" />
+        <img class="img2" src="./tema4/inspo1.webp" alt="inspiration" />
+        <img class="img3" src="./tema4/inspo2.webp" alt="inspiration" />
+        <img class="img4" src="./tema4/proces.webp" alt="proces" />
+        <p class="text2">
+          Min designinspiration, fandt jeg i Dexters Laboratorium. Jeg kan godt
+          lide måden de udformer karaktererne; spidse og næsten ”kiki” i deres
+          udtryk, men stadig ufjendtlige, grundet de bløde farver. Figurerne er
+          asymmetriske, og benytter solid drawing, hvilket holder dem livlige og
+          spændende for øjet. <br />
+          Vha. moodboard hvor jeg blandede billeder af de to inspirationer, kom
+          jeg frem til et godt udtryk. <br />
+          Jeg benyttede mig af atmosfærisk perspektiv, idet min baggrund var
+          kold og blå, mens klikbare elementer var varmere. Mine karakterer blev
+          asymmetriske som jeg ønskede, og havde et snert af solid drawing.
+          Klikbare elementer fik også en dybde, men jeg holdte dem i samme
+          farvetone – for at holde den lidt urealistiske farvepalette fra
+          tegnefilmen. Min tone of voice var opfordrende, men ikke dramatisk.
+        </p>
+        <img class="img5" src="./tema4/figur2.webp" alt="Katrine" />
+      </section>
+      <hr />
+      <section class="third">
+        <p>
+          Ifb. med kodningen af spillet – blev vi introduceret for state machine
+          diagrammer. Disse laves ud fra UML-standard hvor faste figurer betyder
+          faste ting. Diagrammet var nyttigt, når jeg kodede i JavaScript. Det
+          hjalp med at holde overblik over mine funktioner. Hver function skulle
+          bestå af mange selectors og ordrer, f.eks.
+          <i> classList.add(””)</i> eller events som <i> (”click”, ..);</i>, og
+          derfor var det godt at have papiret ved siden af til hjælp. <br />
+          Jeg udvalgte funktioner der passede til mit spil, og prøvede disse af.
+          Jeg brugte hele tiden console.log til at se, om jeg havde lavet en
+          fejl. <br />
+          Det fungerede ikke med random speed for mig, men til gengæld tilføjede
+          jeg en random position, til at skifte spilelementernes position efter
+          klik. <br />
+          Efter tests, erfarede jeg også at jeg havde alt for mange klikbare
+          elementer i mit spil – og reducerede derfor på disse. Det gav en langt
+          bedre brugeroplevelse.
+        </p>
+
+        <img
+          class="img6"
+          src="./tema4/aktivitetsdiagram.webp"
+          alt="aktivitets"
+        />
+        <img
+          class="img7"
+          src="./tema4/emmabachmann_state_machine.webp"
+          alt="state"
+        />
+        <p>
+          Til slut lavede jeg et dokumentationssite, som opsummerede min proces,
+          og viste mine assets og spilbaggrunde i en lang liste. <br />
+          Igen kunne jeg trække på gamle erfaringer om, at man ikke kan få nok
+          dokumentation.
+        </p>
+        <button>
+          <a href="http://emmaiguldbergsgade.dk/kea/06_bilag/spil/spil.html"
+            >Prøv spillet hér</a
+          >
+        </button>
+      </section>
+      <hr />
+    </main>
+    <footer>
+      <p>
+        1. semester eksamen. Kreeret af Emma Bachmann Witthoff i januar 2022.
+      </p>
+    </footer>
+    <script src="burger.js"></script>
+  </body>
+</html>

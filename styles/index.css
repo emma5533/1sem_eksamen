@@ -1,0 +1,82 @@
+body {
+  background-color: #0b1f8c;
+  background-image: url(/assets/portfolio_m_txt.svg);
+  background-size: 100%;
+}
+
+.animations {
+  height: 600px; /*sørger for at det fylder mere af viewnporten*/
+  display: grid; /*griddet placerer animationerne inde i viewporten*/
+  align-content: center; /*placerer i midten, i stedet for i toppen*/
+  position: fixed; /*er her udelukkende for at jeg kan lave z-index....*/
+  top: 0;
+  left: 34%;
+  z-index: -1;
+}
+
+.animations > * {
+  grid-area: 1/1; /*fylder hele griddet*/
+  width: 120px; /*vha. pixels holder de størrelsen når viewporten ændres*/
+}
+
+/*ANIMATION*/
+.circle {
+  animation-name: circle_kf;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle_kf {
+  /*rotate skal først ellers virker det ikke*/
+  0% {
+    transform: rotate(0) translate(110%); /*translate sørger for de rykkes ud og ikke står oven i hinanden*/
+  }
+  100% {
+    transform: rotate(360deg) translate(110%);
+  }
+}
+/*delay på hver figur, så de har hver deres plads*/
+.tema1 {
+  animation-delay: -3s;
+}
+.tema2 {
+  animation-delay: -6s;
+}
+.tema3 {
+  animation-delay: -9s;
+}
+.tema4 {
+  animation-delay: -12s;
+}
+
+footer p {
+  /*margin-top: 700px; Det her virkede ikke..*/
+  position: absolute;
+  bottom: 2%;
+  padding-inline: 2rem;
+  color: #f2eadf;
+  z-index: -1;
+}
+
+/***********QUERIES*******************/
+/*fra tablet og op*/
+@media (min-width: 600px) {
+  body {
+    background-image: url(/assets/portfoliotxt.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .animations {
+    top: 9%;
+    left: 40%;
+  }
+  .animations > * {
+    width: 180px;
+  }
+
+  footer p {
+    width: 100%;
+  }
+}

@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/************************BURGER MENU*********************/
+/*knappernes udseende+position*/
+.toggle_btn {
+  /*fjerner default knap udseende*/
+  border: none;
+  background: transparent;
+
+  display: block; /*vis!*/
+  position: fixed; /*klistrer*/
+
+  /*placerer i højre side*/
+  top: 1.6%;
+  right: 1.6%;
+}
+
+/*den brede med logoet til venstre*/
+.banner {
+  background-color: #0b1f8c;
+  width: 100%;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  padding: 0.6rem;
+}
+
+nav {
+  background-color: #0b1f8c;
+
+  /*placering*/
+  /*Translate sørger for at nav'en hele tiden er der, men bare er rykket ud af viewporten*/
+  transform: translateX(100%);
+  transition: 0.6s;
+  position: fixed; /*klistrer*/
+  top: 0;
+  right: 0;
+  width: 100%; /*den må gerne fylde det hele i mobil version*/
+  height: 100%;
+
+  /*tekstens placering*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /*sætter det i midten af nav. */
+}
+
+/*links*/
+a {
+  text-decoration: none; /*fjerner default understregninger*/
+  color: #f2eadf;
+  /*skifttype*/
+  font-family: ohno-blazeface, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-style: normal;
+}
+a:hover {
+  color: #f05f1a;
+  transform: scale(105%);
+}
+
+/*listen i nav*/
+nav ul {
+  list-style: none; /*fjerner prikker på ul liste*/
+  display: flex;
+  flex-direction: column; /*får teksten på linej og sørger for at vi kan lave gap*/
+  gap: 3rem;
+  padding-top: 4rem; /*så det ikke står i toppen*/
+}
+
+/*animation af burger*/
+/*Når nav får klassen shown, skal den translate. Altså modsat de 100% den fik at vide før*/
+nav.shown {
+  transform: translateX(0);
+}
+
+.quit {
+  display: none; /*skjul!*/
+}
+.toggle_btn.open .burger {
+  display: none; /*når knap får klassen åben, skal burger=display:none*/
+}
+
+.burger {
+  display: block;
+}
+.toggle_btn.open .quit {
+  display: block;
+}
+
+/****BURGER QUERY****/
+@media (min-width: 700px) {
+  nav {
+    width: 30%;
+    opacity: 0.9;
+    justify-content: flex-start;
+  }
+}
+
+/**************GENERELLE REGLER**********/
+body {
+  background-color: #f2eadf;
+}
+
+/*Sørger for at alle sektioner undtagen first, får margin.*/
+/*grid i main kommer først over 600px*/
+.second,
+.third,
+.fourth,
+.fifth {
+  padding-inline: 2.5rem;
+}
+
+h1 {
+  font-family: ohno-blazeface, sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+  color: #f2eadf;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 23px;
+  font-family: soleil, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #0b1f8c;
+}
+
+hr {
+  height: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-inline: 2.5rem;
+  background: url(/assets/hr.svg) repeat-x 0 0;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding-inline: 1rem;
+  margin-bottom: 1rem;
+}
+
+/***********FAST FIRST SECTION************/
+.first {
+  background-color: #0b1f8c;
+  padding-inline: 2.5rem; /*giver space, som man har mistet da det ikke er i grid*/
+}
+.first p {
+  color: #f2eadf;
+  padding-bottom: 1rem;
+}
+.first img {
+  margin-top: 3.9rem;
+}
+.line {
+  margin-top: -1.7rem;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr minmax(600px, 1000px) 1fr;
+  }
+  main section {
+    grid-column: 2/3;
+  }
+
+  hr {
+    grid-column: 2/3;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .first {
+    /*sætter blå helt ud til kanten, overskriver ovenstående grid i web*/
+    grid-column: 1/4;
+  }
+  .first_grid {
+    /*grid der sætter billede og tekst ved siden af hinanden*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .first article {
+    grid-column: 2/3;
+    margin-top: 4rem;
+  }
+  .line {
+    grid-column: 2/3;
+    width: 100%;
+    margin-top: -1rem;
+  }
+}

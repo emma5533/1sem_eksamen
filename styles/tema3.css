@@ -1,0 +1,74 @@
+.second img {
+  margin: 1rem;
+}
+
+/*KNAP*/
+.fifth button {
+  border: 0;
+  background-color: #0b1f8c;
+  padding-inline: 1.5rem;
+  padding-block: 0.3rem;
+}
+.fifth button a {
+  color: #f2eadf;
+  font-family: soleil, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+.fifth button:hover {
+  background-color: #f05f1a;
+  transform: scale(95%);
+}
+
+@media (min-width: 600px) {
+  .second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .second img {
+    margin: 0;
+  }
+  .second .img1,
+  .second .img2,
+  .second .img3 {
+    margin-top: 1rem;
+  }
+
+  .third {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .fourth {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .fourth .img1 {
+    grid-column: 2/5;
+  }
+  .fourth .img2 {
+    grid-column: 1/4;
+  }
+
+  .fifth {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .fifth button {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .fifth p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .fifth .button_2 {
+    grid-row: 3/4;
+  }
+}

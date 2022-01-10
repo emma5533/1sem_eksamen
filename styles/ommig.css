@@ -1,0 +1,44 @@
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-family: roboto-mono, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+
+  color: #f2eadf;
+}
+
+h6 {
+  line-height: 23px;
+  font-family: soleil, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: #0b1f8c;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media (min-width: 600px) {
+  .first .text1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .second article {
+    margin-block: 1.5rem;
+  }
+
+  .second img {
+    max-width: 90%;
+  }
+}
