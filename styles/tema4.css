@@ -3,25 +3,25 @@
 }
 
 /*KNAP*/
-.second button,
-.third button {
+
+.third .button {
   border: 0;
   background-color: #0b1f8c;
   padding-inline: 1.5rem;
   padding-block: 0.3rem;
 }
-.second button a,
-.third button a {
+
+.third .button a {
   color: #f2eadf;
   font-family: soleil, sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
   font-style: normal;
 }
-.second button:hover,
-.third button:hover {
+
+.third .button:hover {
   background-color: #f05f1a;
-  transform: scale(95%);
+  scale: 95%;
 }
 
 @media (min-width: 600px) {
@@ -50,7 +50,7 @@
   .second img {
     margin: 0;
   }
-  .third button {
+  .third .button {
     place-self: center;
   }
 }

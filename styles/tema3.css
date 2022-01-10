@@ -3,25 +3,28 @@
 }
 
 /*KNAP*/
-.fifth button {
+.fifth .button,
+.fifth .button_2 {
   border: 0;
   background-color: #0b1f8c;
   padding-inline: 1.5rem;
   padding-block: 0.3rem;
 }
-.fifth button a {
+.fifth .button a,
+.fifth .button_2 a {
   color: #f2eadf;
   font-family: soleil, sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
   font-style: normal;
 }
-.fifth button:hover {
+.fifth .button:hover,
+.fifth .button_2:hover {
   background-color: #f05f1a;
-  transform: scale(95%);
+  scale: 95%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .second {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -60,7 +63,7 @@
     gap: 1rem;
     margin-top: 1rem;
   }
-  .fifth button {
+  .fifth .button {
     grid-column: 2/4;
     grid-row: 1/2;
   }
@@ -69,6 +72,7 @@
     grid-row: 2/3;
   }
   .fifth .button_2 {
+    grid-column: 2/4;
     grid-row: 3/4;
   }
 }
