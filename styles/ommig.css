@@ -1,3 +1,7 @@
+.second img {
+  margin-block: 1rem;
+}
+
 h2 {
   margin-top: 1.5rem;
   margin-bottom: 0;
@@ -30,15 +34,10 @@ p {
 
   .second {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: minmax(150px, 350px) 1fr;
+    gap: 2rem;
   }
-
   .second article {
     margin-block: 1.5rem;
-  }
-
-  .second img {
-    max-width: 90%;
   }
 }
