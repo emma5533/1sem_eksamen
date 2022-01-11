@@ -1,0 +1,69 @@
+img {
+  margin-block: 1rem;
+}
+
+/*knap*/
+.fourth .button {
+  border: 0;
+  background-color: #0b1f8c;
+  /* padding-inline: 1.5rem; */
+  padding-block: 0.3rem;
+  text-align: center;
+}
+.fourth .button a {
+  color: #f2eadf;
+  font-family: soleil, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-style: normal;
+}
+.fourth .button:hover {
+  background-color: #f05f1a;
+  scale: 95%;
+}
+
+@media (min-width: 600px) {
+  img {
+    margin: 0; /*overskriver den margin der er sat på udenfor query*/
+  }
+
+  .second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+  }
+  .second .img1 {
+    grid-row: 1/3;
+  }
+  .second p {
+    grid-column: 1/2;
+  }
+
+  .third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+  .third .img1 {
+    grid-row: 1/3;
+  }
+  .third .img3 {
+    grid-column: 2/3;
+  }
+
+  .fourth {
+    display: grid;
+    grid-template-columns: minmax(200px, 500px) minmax(300px, 500px);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+  .fourth img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .fourth .button {
+    align-self: center;
+  }
+}
