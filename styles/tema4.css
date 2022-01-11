@@ -1,14 +1,13 @@
 .second img {
-  margin-block: 1rem;
+  margin-block: 1rem; /*billederne får lidt luft mellem sig*/
 }
 
-/*KNAP*/
-
+/*******KNAP*******/
 .third .button {
   border: 0;
   background-color: #0b1f8c;
-  padding-inline: 1.5rem;
-  padding-block: 0.3rem;
+  padding-inline: 1.5rem; /*knappens højde*/
+  padding-block: 0.3rem; /*luft i siderne*/
   text-align: center;
 }
 

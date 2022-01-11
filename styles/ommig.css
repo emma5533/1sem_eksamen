@@ -1,4 +1,5 @@
 .second img {
+  /*billeder får lidt mellemrum imellem sig, i mobil*/
   margin-block: 1rem;
 }
 

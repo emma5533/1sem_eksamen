@@ -1,10 +1,10 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /*sørger for at f.eks. width ikke overstiger det jeg ønsker*/
   margin: 0;
 }
 
 img {
-  display: block;
+  display: block; /*viser billeder*/
   max-width: 100%;
   height: auto;
 }
@@ -12,14 +12,13 @@ img {
 /************************BURGER MENU*********************/
 /*knappernes udseende+position*/
 .toggle_btn {
-  /*fjerner default knap udseende*/
-  border: none;
-  background: transparent;
+  border: none; /*fjerner default knap udseende*/
+  background: transparent; /*fjerner default knap udseende*/
 
   display: block; /*vis!*/
   position: fixed; /*klistrer*/
 
-  /*placerer i højre side*/
+  /*placerer i højre øvre side*/
   top: 1.6%;
   right: 1.6%;
 }
@@ -28,11 +27,11 @@ img {
 .banner {
   background-color: #0b1f8c;
   width: 100%;
-  position: fixed;
+  position: fixed; /*klistrer*/
 
   top: 0;
   left: 0;
-  padding: 0.6rem;
+  padding: 0.6rem; /*sætter hvor bred den er*/
 }
 
 nav {
@@ -43,15 +42,15 @@ nav {
   transform: translateX(100%);
   transition: 0.6s;
   position: fixed; /*klistrer*/
-  top: 0;
-  right: 0;
+  top: 0; /*sidder så langt ude og oppe som den kan*/
+  right: 0; /*sidder så langt ude og oppe som den kan*/
   width: 100%; /*den må gerne fylde det hele i mobil version*/
   height: 100%;
 
   /*tekstens placering*/
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /*sætter det i midten af nav. */
+  justify-content: center; /*sætter det i midten af nav. */
+  align-items: flex-start; /*de sidder i toppen af flexområdet*/
 }
 
 /*links*/
@@ -73,9 +72,9 @@ a:hover {
 nav ul {
   list-style: none; /*fjerner prikker på ul liste*/
   display: flex;
-  flex-direction: column; /*får teksten på linej og sørger for at vi kan lave gap*/
+  flex-direction: column; /*får teksten på line og sørger for at vi kan lave gap*/
   gap: 3rem;
-  padding-top: 4rem; /*så det ikke står i toppen*/
+  padding-top: 4rem; /*så det ikke står helt i toppen*/
 }
 
 /*animation af burger*/
@@ -158,7 +157,7 @@ footer {
 /***********FAST FIRST SECTION************/
 .first {
   background-color: #0b1f8c;
-  padding-inline: 2.5rem; /*giver space, som man har mistet da det ikke er i grid*/
+  padding-inline: 2.5rem; /*giver space, som man har mistet, da det ikke er i grid*/
 }
 .first p {
   color: #f2eadf;
@@ -168,12 +167,12 @@ footer {
   margin-top: 3.9rem;
 }
 .line {
-  margin-top: -1.7rem;
+  margin-top: -1.7rem; /*sørger for at denne overlapper .first lidt*/
 }
 
 @media (min-width: 600px) {
   main {
-    display: grid;
+    display: grid; /*det generelle grid*/
     grid-template-columns: 1fr minmax(600px, 1000px) 1fr;
   }
   main section {

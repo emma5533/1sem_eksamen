@@ -105,6 +105,6 @@ video {
   .fifth .button {
     height: 45px;
     max-width: 200px;
-    place-self: center;
+    place-self: center; /*placerer knappen i midten af den ledige plads*/
   }
 }

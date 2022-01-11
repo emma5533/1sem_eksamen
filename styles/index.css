@@ -15,18 +15,18 @@ body {
 }
 
 .animations > * {
+  /*alt inden i .animations*/
   grid-area: 1/1; /*fylder hele griddet*/
   width: 120px; /*vha. pixels holder de størrelsen når viewporten ændres*/
 }
 
-/*ANIMATION*/
+/*********ANIMATION************/
 .circle {
   animation-name: circle_kf;
   animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 @keyframes circle_kf {
   /*rotate skal først ellers virker det ikke*/
   0% {
@@ -51,7 +51,7 @@ body {
 }
 
 footer p {
-  /*margin-top: 700px; Det her virkede ikke..*/
+  /*margin-top: 700px; Det her virkede ikke..:(*/
   position: absolute;
   bottom: 2%;
   padding-inline: 2rem;

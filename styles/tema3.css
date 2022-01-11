@@ -1,14 +1,15 @@
 .second img {
+  /*billederne får lidt luft mellem sig*/
   margin-block: 1rem;
 }
 
-/*KNAP*/
+/********KNAP**********/
 .fifth .button,
 .fifth .button_2 {
   border: 0;
   background-color: #0b1f8c;
-  padding-inline: 1.5rem;
-  padding-block: 0.3rem;
+  padding-inline: 1.5rem; /*højden på kassen*/
+  padding-block: 0.3rem; /*luft i sidderne*/
   text-align: center;
 }
 .fifth .button a,
