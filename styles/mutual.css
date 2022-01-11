@@ -144,7 +144,7 @@ hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-inline: 2.5rem;
-  background: url(/assets/hr.svg) repeat-x 0 0;
+  background: url("../assets/hr.svg") repeat-x 0 0;
   border: none;
 }
 

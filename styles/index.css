@@ -1,7 +1,8 @@
 body {
   background-color: #0b1f8c;
-  background-image: url(/assets/portfolio_m_txt.svg);
+  background-image: url("../assets/portfolio_m_txt.svg");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .animations {
@@ -37,7 +38,7 @@ body {
   }
 }
 /*delay på hver figur, så de har hver deres plads*/
-.tema1 {
+.tema6 {
   animation-delay: -3s;
 }
 .tema2 {
@@ -63,7 +64,7 @@ footer p {
 /*fra tablet og op*/
 @media (min-width: 600px) {
   body {
-    background-image: url(/assets/portfoliotxt.svg);
+    background-image: url("../assets/portfoliotxt.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
